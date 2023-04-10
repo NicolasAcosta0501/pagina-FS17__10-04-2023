@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    /* Neutral Colors */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 24%, 81%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Background: hsl(212, 25%, 15%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Very-Dark-Blue-Transparent: hsl(216, 12%, 8%);
+
+    /* Vivid Colors */
+    --Yellow: rgb(255, 251, 35);
+    --Orange: rgb(255, 166, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: rgb(236, 239, 255);
+}
+
+
+/** Estilos index.html */
+/* Estilos del Header */
+/*  Estilos Nav */
+
+
+
+/*! Sección Nav */
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 240, 35);
+    box-shadow: 0 3px 8px rgb(97, 97, 97);
+    position: relative;
+    font-size: 20px;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-navegation {
+    display: flex;
+}
+
+.nav-icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+
+h1 a {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.logo-father {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 55px;
+    margin-left: 10px;
+}
+
+.nav-brand {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-brand-label {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+
+}
+
+#nav-brand-input {
+    display: none;
+}
+
+#nav-brand-input:checked~.nav-brand-show,
+#nav-brand-input:checked~.nav-brand-label .nav-brand-arrow-up {
+    display: block;
+    opacity: 1;
+    transition: opacity 80ms;
+}
+
+#nav-brand-input:checked~.nav-brand-label .nav-brand-arrow-down {
+    display: none;
+}
+
+.nav-brand-title {
+    cursor: pointer;
+}
+
+.nav-brand-arrow-up {
+    display: none;
+}
+
+.nav-brand-show {
+    width: 200px;
+    display: none;
+    opacity: 0;
+    background-color: rgb(66, 66, 66);
+}
+
+
+.nav-brand-show li {
+    width: 100%;
+    height: 30px;
+}
+
+.nav-brand-show li:hover a {
+    padding: 10px;
+    background-color: rgb(59, 59, 255);
+    transition: 350ms;
+}
+
+.nav-brand-show a {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #D9D9D9;
+    font-weight: 400;
+}
+
+.list-nav {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 120px;
+}
+
+.list-nav:hover {
+    text-decoration: underline;
+}
+
+.nav-brand img {
+    width: 15px;
+}
+
+.nav-brand-arrow-left,
+.nav-brand-arrow-right {
+    display: none;
+}
+
+.icon-cart-black img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.open-close-nav-mobile {
+    display: none;
+}
+
+#open-close-nav-mobile__input {
+    display: none;
+}
+
+#open-close-nav-mobile__input:checked~.open-close-nav-mobile label .hamburguesa-nav-icon {
+    opacity: 0;
+}
+
+#open-close-nav-mobile__input:checked~.open-close-nav-mobile label .close-nav-icon {
+    opacity: 1;
+}
+
+.hamburguesa-nav-icon {
+    width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    transition: 80ms;
+}
+
+.close-nav-icon {
+    width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: 80ms;
+}
+
+.hamburguesa-nav-icon img {
+    width: 45px;
+}
+
+.close-nav-icon img {
+    width: 35px;
+}
+
+/* Fin Sección Nav */
+
+
+
+
+/*! Sección Main */
+main {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.smartphones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.smartphones h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.smartphones h2 img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+hr {
+    width: 95%;
+}
+
+.smartphones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+/** Sección Mostrar detalles técnicos de cada SmartPhone */
+.target-details-input {
+    display: none;
+}
+
+.target-details-input__zfold4,
+.target-details-input__xiaomi12,
+.target-details-input__realme9pro,
+.target-details-input__iphone14 {
+    overflow: scroll;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    padding: 5% 10%;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    transition: 300ms;
+}
+
+.target-details-input__zfold4::-webkit-scrollbar {
+    display: none;
+}
+
+#target-details-input__zfold4:checked~.target-details-input__zfold4,
+#target-details-input__xiaomi12:checked~.target-details-input__xiaomi12,
+#target-details-input__realme9pro:checked~.target-details-input__realme9pro,
+#target-details-input__iphone14:checked~.target-details-input__iphone14 {
+    visibility: visible;
+    opacity: 1;
+    transition: 300ms;
+}
+
+.target-details-smartphones {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    min-width: 900px;
+    max-width: 1000px;
+    height: 100%;
+    min-height: 500px;
+    max-height: 600px;
+    background-color: rgb(236, 239, 255);
+    box-shadow: 0px 0px 10px 2px #535353;
+    border-radius: 10px;
+}
+
+.target-details-smartphone-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.target-details-smartphone-close .close {
+    cursor: pointer;
+    width: 30px;
+}
+
+.details-smartphone {
+    width: 50%;
+    height: 100%;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+    border-top: 1px dashed;
+}
+
+.table-header {
+    border: none;
+}
+
+.target-smartphone-details {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.add-to-cart-button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 224, 11);
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+
+.add-to-cart-button:hover {
+    background-color: rgb(84, 255, 92);
+    transition: 80ms;
+}
+
+.buy-button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 81, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.buy-button:hover {
+    background-color: rgb(113, 158, 255);
+    transition: 200ms;
+}
+
+/* Fin Seccion Mostrar Detalles Técenicos de Cada SmartPhone */
+
+
+
+/** Seccion Tarjetas Contenedoras de SmartPhones */
+.target-smartphone {
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    position: relative;
+}
+
+.target-smartphone-input {
+    position: absolute;
+    width: 30px;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+/* Mostrar y ocultar distintos carritos */
+/* Samsung */
+#target-smartphone-samsung-zfold4:checked~.remove-samsung,
+#target-smartphone-samsung-zfold4:checked {
+    display: block;
+}
+
+#target-smartphone-samsung-zfold4:checked~.add-samsung {
+    display: none;
+}
+
+/* Xiaomi */
+#target-smartphone-xiaomi-12:checked~.remove-xiaomi,
+#target-smartphone-xiaomi-12:checked {
+    display: block;
+}
+
+#target-smartphone-xiaomi-12:checked~.add-xiaomi {
+    display: none;
+}
+
+/* Realme */
+#target-smartphone-realme-9pro:checked~.remove-realme,
+#target-smartphone-realme-9pro:checked {
+    display: block;
+}
+
+#target-smartphone-realme-9pro:checked~.add-realme {
+    display: none;
+}
+
+/* Apple */
+#target-smartphone-iphone-14:checked~.remove-apple,
+#target-smartphone-iphone-14:checked {
+    display: block;
+}
+
+#target-smartphone-iphone-14:checked~.add-apple {
+    display: none;
+}
+
+.target-smartphone:hover .smartphone-detail,
+.target-smartphone:hover .price-before {
+    opacity: 1;
+}
+
+.target-smartphone:hover .target-smartphone-img {
+    width: 270px;
+    transition: width 300ms;
+}
+
+.target-smartphone:hover {
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px 1px #b3b3b3;
+}
+
+.target-smartphone figure {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.target-smartphone-img {
+    width: 250px;
+}
+
+.target-smartphone-information {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+}
+
+.target-smartphone-information-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.target-smartphone-add-cart {
+    width: 18px;
+}
+
+.target-smartphone-remove-cart-hidden {
+    display: none;
+}
+
+.target-smartphone-remove-cart {
+    width: 18px;
+}
+
+.target-smartphone .smartphone-detail {
+    opacity: 0;
+    transition: opacity 300ms;
+    font-size: 16px;
+}
+
+.target-smartphone .price-before {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.price-today {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-today .price {
+    font-weight: 500;
+}
+
+.price-today .discount-rate {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 95, 238);
+}
+
+
+
+
+
+
+
+/** Estilos para los inicios de sesion */
+
+
+.inicio-sesion,
+.signup {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.inicio-sesion form,
+.signup form {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.inicio-sesion h4,
+.signup h4 {
+    color: rgb(0, 132, 255);
+    font-size: 24px;
+}
+
+.inicio-sesion p a,
+.signup p a {
+    color: gray;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.cheems {
+    width: 60px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 30px;
+    width: 100%;
+}
+
+input:focus::placeholder {
+    color: rgb(0, 110, 255);
+    outline: none;
+    font-size: 12px;
+    transition: font-size 250ms;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(0, 110, 255);
+    padding-left: 5px;
+    transition: padding 250ms;
+}
+
+input.input-name {
+    background-image: url(../assets/img/name-icon.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 98%;
+}
+
+input[type="email"] {
+    background-image: url(../assets/img/email-icon.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 98%;
+}
+
+input[type="password"] {
+    background-image: url(../assets/img/password-icon.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 98%;
+}
+
+.submit {
+    height: 40px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.submit:hover {
+    background-color: rgb(90, 162, 255);
+    cursor: pointer;
+}
+
+.submit:active {
+    background-color: rgb(3, 3, 3);
+}
+
+
+@media(min-width: 350px) and (max-width: 719px) {
+    .open-close-nav-mobile {
+        display: block;
+    }
+
+    .nav-navegation {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 50%;
+        flex-direction: column;
+        background-color: rgb(255, 240, 35);
+    }
+
+    .list-nav {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .icon-cart-black {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+    }
+
+    #open-close-nav-mobile__input:checked~.nav-navegation {
+        display: block;
+    }
+
+    .nav-brand-arrow-left {
+        display: block;
+        margin-right: 2.5px;
+    }
+
+    .nav-brand-arrow-down {
+        display: none;
+    }
+
+    #nav-brand-input:checked~.nav-brand-label .nav-brand-arrow-up,
+    #nav-brand-input:checked~.nav-brand-label .nav-brand-arrow-left {
+        display: none;
+    }
+
+    #nav-brand-input:checked~.nav-brand-label .nav-brand-arrow-right {
+        display: block;
+    }
+
+    #nav-brand-input:checked~.nav-brand-label {
+        background-color: rgb(66, 66, 66);
+        color: #D9D9D9;
+        transition: 80ms;
+    }
+
+    .nav-brand {
+        width: 100%;
+        position: relative;
+    }
+
+    .nav-brand-show {
+        width: 100%;
+        position: absolute;
+        left: -100%;
+    }
+
+    .nav-brand-show li {
+        width: 100%;
+        height: 50px;
+    }
+
+    .open-close-nav-mobile {
+        display: block;
+    }
+
+    .target-smartphone .smartphone-detail,
+    .target-smartphone .price-before {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 950px) {
+    .target-details-smartphones {
+        flex-direction: column;
+        max-width: 500px;
+        min-width: 350px;
+        min-height: 850px;
+        max-height: 1200px;
+    }
+
+    .details-smartphone,
+    .target-smartphone-details {
+        width: 100%;
+        height: 50%;
+    }
+
+
+
+    .target-smartphone-details .container-target-smartphone-details-img {
+        min-width: 20px;
+        min-height: 20px;
+    }
+
+    .target-smartphone-img.details.size {
+        height: 100%;
+    }
+}
+
+@media (max-width: 540px) and (max-height: 900px) {
+    .target-details-smartphones {
+        margin-top: 200px;
+    }
+}
